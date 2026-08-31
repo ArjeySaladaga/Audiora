@@ -1,0 +1,30 @@
+
+{
+  "name": "audiora",
+  "version": "1.0.0",
+  "description": "Audiora — a sleek desktop music player built with Electron",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  "build": {
+    "appId": "com.F4GRP.audiora",
+    "productName": "Audiora",
+    "win": {
+    "target": "nsis",
+    "icon": "assets/icon.ico"
+    },
+    "mac": {
+    "target": "dmg",
+    "icon": "assets/icon.icns"
+    },
+    "linux": {"target": "AppImage", "icon": "assets/icon.png"}},
+    
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^31.0.0",
+    "electron-builder": "^26.15.3"
+  }
+}
